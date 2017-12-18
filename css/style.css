@@ -128,7 +128,8 @@ footer div p {
 	width: 100%;
 }
 .cards img {
-  width: 18%;
+  max-width: 800px;
+  width: 100%;
   margin: 0.5em 3%;
 }
 .cards .brand-box {
