@@ -130,7 +130,7 @@ footer div p {
 .cards img {
   max-width: 800px;
   width: 100%;
-  margin: 0.5em 3%;
+  margin-top: 1em;
 }
 .cards .brand-box {
   margin-bottom: .25rem;
