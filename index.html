@@ -96,7 +96,14 @@
         <link rel="stylesheet" href="./css/resetmarketo.css">
         <script src="https://app-ab06.marketo.com/js/forms2/js/forms2.min.js"></script>
         <form id="mktoForm_2650"></form>
-        <script>MktoForms2.loadForm("https://app-ab06.marketo.com", "018-APH-439", 2650);</script>
+        <script>
+          MktoForms2.loadForm("https://app-ab06.marketo.com", "018-APH-439", 2650, function(form) {
+            form.onSuccess(function(values, followUpUrl) {
+              $('.mktoButton').val('Submitted').disable();
+              return false;
+            });
+          });
+        </script>
       </div>
     </div>
   </div>
