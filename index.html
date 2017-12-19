@@ -99,7 +99,7 @@
         <script>
           MktoForms2.loadForm("https://app-ab06.marketo.com", "018-APH-439", 2650, function(form) {
             form.onSuccess(function(values, followUpUrl) {
-              $('.mktoButton').val('Submitted');
+              $('.mktoButton').text('Submitted');
               $('.mktoButton').attr('disabled', 'disabled');
               return false;
             });
