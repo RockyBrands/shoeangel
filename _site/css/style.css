@@ -94,11 +94,46 @@ footer .copyright {
 footer div p {
   margin: 0.25em 0;
 }
+img {
+  max-width: 100%;
+}
 
 /* MEDIA QUERY*/
 @media only screen and (max-width: 960px) {
   .container{
+    width: 95%;
+  }
+  .bg {
+    display: none;
+  }
+  .bg2 {
+    display: block;
+    text-align: center;
+    max-width: 960px;
+    width: 100%;
+    padding: 0 0.5em 2em;
+    box-sizing: border-box;
+    background: #333;
+    color: white;
+  }
+  .bg2 h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .container{
     width: 80%;
+  }
+  .bg {
+    display: block;
+  }
+  .bg2 {
+    display: none;
   }
 }
 
