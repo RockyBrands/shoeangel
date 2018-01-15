@@ -66,6 +66,9 @@
   font-size: 1.4em !important;
   line-height: 1.2 !important;
 }
+.mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+  margin-left: 1.5em !important;
+}
 .mktoForm button {
   background: #0050b2;
   color: #fff;
