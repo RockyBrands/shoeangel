@@ -84,7 +84,9 @@ h2{text-align: center;margin: 10px 0px;}
 .contact{text-align: center;height: auto;}
 .contact p{text-align: left;line-height: 1.5em;margin: 0px 0px 20px 0px;}
 .contact-form{text-align: left;margin: auto;}
-input{width:95%;height: 30px;margin: 10px 0px;}
+input{
+  /* width:95%; */
+  height: 30px;margin: 10px 0px;}
 .submit{width:150px; background-color: transparent;color: #282828;border: solid 1px gray;}
 .submit:hover{background-color: #282828;color:#fff;border: none;cursor:pointer;transition: .2s ease-in-out;}
 footer{
