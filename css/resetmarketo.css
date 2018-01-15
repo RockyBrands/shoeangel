@@ -85,6 +85,7 @@
   box-sizing: border-box;
   font-size: 1em !important;
   padding: 0.4em !important;
+  margin: 0 !important;
 }
 .mktoForm {
   text-align: center !important;
