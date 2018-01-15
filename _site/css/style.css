@@ -47,6 +47,9 @@ h2{text-align: center;margin: 10px 0px;}
   margin: 3em auto 0;
 
 }
+.successmsg {
+  display: none;
+}
 .hero-title{
   height: 100vh;
   display: flex;
