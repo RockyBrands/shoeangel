@@ -68,6 +68,7 @@
 }
 .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
   margin-left: 1.5em !important;
+  width: 300px;
 }
 .mktoForm button {
   background: #0050b2;
