@@ -6,7 +6,8 @@ a {
   border-bottom: 1px solid #0277bd;
 }
 nav a, .menu ul li a, .menu ul li a:hover {
-  color: #212;
+  color: #212121;
+  text-shadow: 0px 2px 2px white;
   font-weight: bold;
   text-decoration: none;
   border-bottom: 0px solid #fff;
@@ -64,9 +65,14 @@ h2{text-align: center;margin: 10px 0px;}
   font-size: 1.4em;
 }
 .hero-title h1 {
-  background: rgba(255, 255, 255, 1);
+  /* background: rgba(255, 255, 255, 1); */
   padding: 0.75em 1em;
   border-radius: 2px;
+  text-shadow: 0px 2px 2px white;
+  font-weight: normal;
+}
+.hero-title h1 img {
+  width: 500px;
 }
 .subtitle {
   font-weight: 300;
@@ -148,7 +154,7 @@ img {
     width: 80%;
   }
   nav {
-    position: fixed;
+    position: absolute;
   }
   .bg {
     display: block;
