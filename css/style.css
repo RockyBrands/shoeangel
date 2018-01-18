@@ -122,7 +122,7 @@ img {
 }
 .social{list-style-type: none;text-decoration: none;}
 .social a{border: none;}
-.social li{display: inline;}
+.social li{display: inline;padding: 0 3px;}
 .social-icon{width: 7%;}
 
 
