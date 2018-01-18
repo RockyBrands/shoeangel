@@ -120,9 +120,11 @@ footer div p {
 img {
   max-width: 100%;
 }
-/* .social{list-style-type: none;text-decoration: none;}
+.social{list-style-type: none;text-decoration: none;}
+.social a{border: none;}
 .social li{display: inline;}
-.social-icon{width: 7%;} */
+.social-icon{width: 7%;}
+
 
 /* MEDIA QUERY*/
 @media only screen and (max-width: 960px) {
