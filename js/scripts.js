@@ -41,3 +41,19 @@ $('.counter').each(function() {
 $(document).ready(function() {
 	$('.counter').addClass("prefix");
 });
+
+// Hamburger Menu //
+
+(function () {
+$('.hamburger-menu').on('click', function() {
+	$('.bar').toggleClass('animate');
+})
+})();
+
+$('.mobile-menu').hide();
+
+(function (){
+	$('.hamburger-menu').on('click', function(){
+		$('.mobile-menu').slideToggle(300);
+	})
+})();
