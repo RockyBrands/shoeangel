@@ -57,3 +57,10 @@ $('.mobile-menu').hide();
 		$('.mobile-menu').slideToggle(300);
 	})
 })();
+
+(function () {
+$('.mobile-menu ul li a').on('click', function() {
+	$('.mobile-menu').slideToggle(300);
+	$('.bar').toggleClass('animate');
+})
+})();
