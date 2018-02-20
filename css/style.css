@@ -6,8 +6,8 @@ a {
   border-bottom: 1px solid #0277bd;
 }
 nav a, .menu ul li a, .menu ul li a:hover {
-  color: #212121;
-  text-shadow: 0px 2px 2px white;
+  color: #0277bd;
+  /* text-shadow: 0px 2px 2px white; */
   font-weight: bold;
   text-decoration: none;
   border-bottom: 0px solid #fff;
@@ -18,15 +18,21 @@ nav{
   box-sizing: border-box;
   position: block;width: 100%;height: 50px;color:#fff;
   top: 0; left: 0;
-  background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%);
+  background: #fff;
+  margin-bottom: 20px;
+
+  /* background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%);
 background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 100%);
 background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#00ffffff',GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#00ffffff',GradientType=0 ); */
+}
+p{
+  color: #4f4f4f;
 }
 h2{text-align: center;margin: 10px 0px;}
 .logo{float:left;width: 50%;line-height: 38px;}
 .logo img{width: 200px;vertical-align: middle;padding: 0px 0px 0px 15px;}
-.menu{width: 50%;float: right;text-align: right;line-height: 40px}
+.menu{width: 50%;float: right;text-align: right;line-height: 35px}
 .menu li{display: inline;margin: 0px 15px 0px 15px;}
 .menu li a{color: #fff;text-decoration: none;}
 .menu li a:hover{text-decoration: underline;}
@@ -36,11 +42,12 @@ h2{text-align: center;margin: 10px 0px;}
   background: #0050b2;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.25em 0.75em;
+  font-weight: normal;
+  padding: 0.5em 2em;
   border-radius: 2px;
   margin-top: 2em;
-  font-size: 1.2em;
+  font-size: 16px;
+  text-transform: uppercase;
   border: none;
 }
 .container{
@@ -68,7 +75,7 @@ h2{text-align: center;margin: 10px 0px;}
   /* background: rgba(255, 255, 255, 1); */
   padding: 0.75em 1em;
   border-radius: 2px;
-  text-shadow: 0px 2px 2px white;
+  /* text-shadow: 0px 2px 2px white; */
   font-weight: normal;
 }
 .hero-title h1 img {
@@ -100,7 +107,7 @@ footer{
   width: 100%;
   padding: 1.25em 0;
   background: #212121;
-  color: #5BBBF5;
+  color: #fff;
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Arial', sans-serif;
   font-size: 0.9em;
@@ -116,6 +123,7 @@ footer .copyright {
 }
 footer div p {
   margin: 0.25em 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 img {
   max-width: 100%;
@@ -129,15 +137,16 @@ img {
 /* Donations Page */
 
 .landing-hero{
-  background-image: url('../img/donations-3.jpeg');
+  background-image: url('../img/donations-hero.jpg');
   width: 100%;
   height: 400px;
   background-size: cover;
   background-position: top;
+
  }
 
  .landing-title{
-   height: 50vh;
+   height: 60vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -152,8 +161,9 @@ img {
    /* background: rgba(255, 255, 255, 1); */
    padding: 0.75em 1em;
    border-radius: 2px;
-   text-shadow: 0px 2px 2px white;
-   font-weight: normal;
+   text-shadow: 0px 2px 2px #303030;
+   font-weight: bold;
+   color: #fff;
  }
 
  .donation-container{
@@ -171,6 +181,11 @@ img {
 
  .prefix::before{
    content: '$'
+ }
+
+ .cont-fix{
+   width: 80% !important;
+   margin: 2em auto 0;
  }
 
 /* Hambuger Menu */
@@ -234,7 +249,7 @@ img {
 
  .mobile-menu{
   position: absolute;
-  top: 80px;
+  top: 70px;
   background: #0050b2;
   width: 100%;
 }
@@ -256,6 +271,12 @@ img {
 @media only screen and (max-width: 960px) {
   .container{
     width: 95%;
+  }
+  .landing-hero, .landing-title{
+    height: 200px;
+  }
+  .first{
+    margin: 2em auto 0;
   }
   .menu {
     display: none;
@@ -309,8 +330,13 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
-  .bg{height: 400px;}
-  .hero-title{height:auto;padding: 160px 0px;}
+  .bg{
+    height: 400px;
+  }
+  .hero-title{
+    height:auto;
+    padding: 160px 0px;
+  }
 }
 
 /* Gray Scale Hover */

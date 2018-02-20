@@ -74,11 +74,12 @@
   background: #0050b2;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.25em 0.75em;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0.50em 2em !important;
   border-radius: 2px;
   margin-top: 2em;
-  font-size: 1.2em;
+  font-size: 16px !important;
   border: none;
 }
 .mktoForm input.mktoField {
