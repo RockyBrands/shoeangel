@@ -12,7 +12,9 @@ nav a, .menu ul li a, .menu ul li a:hover {
   text-decoration: none;
   border-bottom: 0px solid #fff;
 }
-body{font-family: 'Raleway'}
+body{
+  font-family: 'Raleway';
+}
 nav{
   padding: 0.5em;
   box-sizing: border-box;
@@ -24,7 +26,13 @@ nav{
 p{
   color: #4f4f4f;
 }
-h2{text-align: center;margin: 10px 0px;}
+img {
+  max-width: 100%;
+}
+h2{
+  text-align: center;
+  margin: 10px 0px;
+}
 .logo{float:left;width: 50%;line-height: 38px;}
 .logo img{width: 200px;vertical-align: middle;padding: 0px 0px 0px 15px;}
 .menu{width: 50%;float: right;text-align: right;line-height: 35px}
@@ -82,19 +90,26 @@ h2{text-align: center;margin: 10px 0px;}
 }
 .intro{text-align: center;height: auto;}
 .intro p, .container p{text-align: left;line-height: 1.5em;margin: auto;padding: 0px 0 20px 0;}
-.brands p{width: 50%;line-height: 1.5em;margin: auto;padding: 0px 0 20px 0;}
-.brand-name{height: auto;margin: 95px 0px 95px 0px;}
 .cards{height: auto;text-align: center;}
-.brand-box{width: 100%;height: 100%;display: inline-block;}
 .faq{text-align: center;height: auto;}
 .faq p{font-weight: bold;text-align: left;line-height: 1.5em;margin: auto;padding-bottom: 20px;}
 .answer{font-weight: normal;}
 .contact{text-align: center;height: auto;}
 .contact p{text-align: left;line-height: 1.5em;margin: 0px 0px 20px 0px;}
 .contact-form{text-align: left;margin: auto;}
+.brands {
+  margin: 0 auto;
+	width: 100%;
+}
+.brands img {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 1em;
+}
 input{
   /* width:95%; */
-  height: 30px;margin: 10px 0px;}
+  height: 30px;margin: 10px 0px;
+}
 .submit{width:150px; background-color: transparent;color: #282828;border: solid 1px gray;}
 .submit:hover{background-color: #282828;color:#fff;border: none;cursor:pointer;transition: .2s ease-in-out;}
 footer{
@@ -120,9 +135,7 @@ footer div p {
   margin: 0.25em 0;
   color: rgba(255, 255, 255, 0.5);
 }
-img {
-  max-width: 100%;
-}
+
 .social{list-style-type: none;text-decoration: none;}
 .social a{border: none;}
 .social li{display: inline;padding: 0 3px;}
@@ -344,43 +357,4 @@ img {
 .hover {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-}
-
-/*CARD QUERIES*/
-
-/* 1 column: 320px */
-.cards {
-  margin: 0 auto;
-	width: 100%;
-}
-.cards img {
-  max-width: 800px;
-  width: 100%;
-  margin-top: 1em;
-}
-.cards .brand-box {
-  margin-bottom: .25rem;
-}
-
-/* 2 columns: 600px */
-@media only screen and (min-width: 600px) {
-  .cards .brand-box {
-		width: 48%;
-	}
-	.cards .brand-box:nth-child(2n+0) {
-		margin-right: 0;
-	}
-}
-
-/* 4 columns: 992px and up */
-@media only screen and (min-width: 992px) {
-  .cards .brand-box {
-		width: 23.076923076923077%;
-	}
-	.cards .brand-box:nth-child(3n+0) {
-
-	}
-	.cards .brand-box:nth-child(4n+0) {
-
-	}
 }

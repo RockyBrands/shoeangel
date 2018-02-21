@@ -25,7 +25,7 @@
 }
 .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
   padding: initial !important;
-  width: auto !important;
+  width: 400px !important;
   height: 2.5em !important;
 }
 .mktoForm input[type=text], .mktoForm input[type=email], .mktoForm input[type=date] {
@@ -45,7 +45,6 @@
 .mktoForm .mktoFormCol {
   margin-bottom: initial !important;
   min-height: initial !important;
-  float: none !important;
   display: inline-block;
 }
 .mktoOffset, .mktoGutter {
@@ -86,8 +85,11 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-size: 1em !important;
-  padding: 0.4em !important;
-  margin: 0 !important;
+  padding: .4em !important;
+  margin: 5px 0 !important;
+}
+#mktoRadio_10423_1{
+  margin-left: -13px !important;
 }
 .mktoForm {
   text-align: center !important;
@@ -120,4 +122,10 @@ div#innerWrapDiv {
 }
 #bodyId .mktoContent .lpeCElement {
   position: static !important;
+}
+
+@media only screen and (max-width: 480px) {
+.mktoForm .mktoFormRow .mktoField {
+   clear: none;
+ }
 }
