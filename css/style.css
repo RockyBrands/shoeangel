@@ -58,6 +58,8 @@ a h2:hover{
   font-size: 16px;
   text-transform: uppercase;
   border: none;
+  font-weight: 700;
+  letter-spacing: .05em;
 }
 .btn:hover{
   background: #3975BF;
@@ -101,6 +103,7 @@ a h2:hover{
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding: 10px 0 0 0;
 }
 .home-col{
   width: 95%;
@@ -131,13 +134,16 @@ a h2:hover{
 .col .btn{
   width: 100px;
   margin: 0 auto;
+  font-weight: 700;
+  letter-spacing: .05em;
 }
 .col p{
   text-align: center;
-  padding: 0 20px 20px 20px;
+  padding: 10px 20px 20px 20px;
 }
 .home-col p{
   padding: 0 0 30px 0;
+  text-align: center;
 }
 
 .home-col div{
@@ -147,13 +153,12 @@ a h2:hover{
   width: 50%;
   background-image: url('../img/4eursole_lsp_RKH049_low.jpg');
   background-size: cover;
-  background-position-y: -140px;
+  background-position-y: -110px;
   background-repeat: no-repeat;
 
 }
 .right{
   width: 50%;
-  text-align: left;
   padding: 50px;
 }
 
