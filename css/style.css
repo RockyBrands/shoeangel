@@ -468,6 +468,12 @@ footer{
 }
 
 
+@media only screen and (max-width: 1280px) {
+  .left{
+    background-size: cover;
+    background-position: center;
+  }
+}
 
 /* MEDIA QUERY*/
 @media only screen and (max-width: 960px) {
