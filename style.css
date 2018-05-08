@@ -512,9 +512,9 @@ input {
     left:0;
     right:0;
     bottom:0;
-    background: -moz-linear-gradient(top, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.30) 1%, rgba(0,0,0,0.25) 10%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(top, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 10%,rgba(0,0,0,0) 100%); 
-    background: linear-gradient(to bottom, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 10%,rgba(0,0,0,0) 100%); 
+    background: -moz-linear-gradient(top, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.30) 1%, rgba(0,0,0,0.25) 10%, rgba(0,0,0,0) 25%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 10%,rgba(0,0,0,0) 25%); 
+    background: linear-gradient(to bottom, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 10%,rgba(0,0,0,0) 25%); 
 }
 .hero-promo .hero-title::after{
     content:" ";
@@ -526,9 +526,9 @@ input {
     left:0;
     right:0;
     bottom:0;
-    background: -moz-linear-gradient(bottom, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.30) 1%, rgba(0,0,0,0.25) 20%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 100%); 
-    background: linear-gradient(to top, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 100%); 
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.30) 1%, rgba(0,0,0,0.25) 20%, rgba(0,0,0,0) 25%);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 25%); 
+    background: linear-gradient(to top, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 25%); 
 }
 .hero-promo .hero-title h1{
     position: absolute;
