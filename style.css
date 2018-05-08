@@ -526,9 +526,10 @@ input {
     left:0;
     right:0;
     bottom:0;
-    background: -moz-linear-gradient(bottom, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.30) 1%, rgba(0,0,0,0.25) 20%, rgba(0,0,0,0) 25%);
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 25%); 
-    background: linear-gradient(to top, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 25%); 
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.50) 0%, rgba(0,0,0,0.75) 1%, rgba(0,0,0,0.25) 20%, rgba(0,0,0,0) 85%);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.50) 0%,rgba(0,0,0,0.75) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 85%); 
+    background: linear-gradient(to top, rgba(0,0,0,.50) 0%,rgba(0,0,0,0.75) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 85%);
+    
 }
 .hero-promo .hero-title h1{
     position: absolute;
@@ -539,6 +540,7 @@ input {
     text-transform: uppercase;
     text-shadow: 4px 4px #000000;
     font-weight: 900;
+    margin-top:10px;
 }
 .hero-promo .hero-title h1 span{
     color:#FFFFFF;
