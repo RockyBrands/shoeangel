@@ -339,7 +339,9 @@ footer .row {
 .footer-menu li a {
   color: #fff;
   font-weight: lighter; }
-
+.footer-promo{
+    margin:1em 0;
+}
 .copyright {
   text-align: center;
   color: #fff !important;
@@ -487,6 +489,128 @@ input {
   width: 80% !important;
   margin: 2em auto 0; }
 
+/* Nurses Week Contest Promotion */
+.hero-promo {
+  background-image: url("images/img/nurses_week_contest_bkgd.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero-promo .hero-title{
+    position: relative;
+    height:100%;
+}
+.hero-promo .hero-title::before{
+    content:" ";
+    z-index:1;
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.30) 1%, rgba(0,0,0,0.25) 10%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 10%,rgba(0,0,0,0) 100%); 
+    background: linear-gradient(to bottom, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 10%,rgba(0,0,0,0) 100%); 
+}
+.hero-promo .hero-title::after{
+    content:" ";
+    z-index: 1;
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.30) 1%, rgba(0,0,0,0.25) 20%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 100%); 
+    background: linear-gradient(to top, rgba(0,0,0,.33) 0%,rgba(0,0,0,0.30) 1%,rgba(0,0,0,0.25) 20%,rgba(0,0,0,0) 100%); 
+}
+.hero-promo .hero-title h1{
+    position: absolute;
+    top:0em;
+    z-index:3;
+    width:100%;
+    color:#f4aa00;
+    text-transform: uppercase;
+    text-shadow: 4px 4px #000000;
+    font-weight: 900;
+}
+.hero-promo .hero-title h1 span{
+    color:#FFFFFF;
+}
+.hero-promo .hero-title h4{
+    position: absolute;
+    z-index: 3;
+    bottom:1em;
+    width:100%;
+    color:#f4aa00;
+    font-weight:bold;
+}
+.hero-promo .hero-title h4 span{
+    color:#FFFFFF;
+    text-transform: uppercase;
+}
+#contest{
+    background-color:#f4aa00;
+}
+#contest > div{
+    margin:0 auto;
+    padding:3em;
+}
+#contest p{
+    text-align: center;
+    color:#FFFFFF;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:1.35em
+}
+h2.promotion {
+    color: #005abb;
+    font-weight: bold;
+    font-size:2.5em;
+    text-shadow:
+        -4px -2px 0 #FFFFFF,  
+       4px -2px 0 #FFFFFF,
+        -4px 2px 0 #FFFFFF,
+        4px 2px 0 #FFFFFF,
+        -2px -4px 0 #FFFFFF,  
+       2px -4px 0 #FFFFFF,
+        -2px 4px 0 #FFFFFF,
+        2px 4px 0 #FFFFFF,
+        -3px -3px 0 #FFFFFF,  
+        3px -3px 0 #FFFFFF,
+        -3px 3px 0 #FFFFFF,
+        3px 3px 0 #FFFFFF;
+}
+p#terms{
+    text-decoration:underline;
+    cursor: pointer;
+    font-size:1em;
+    font-weight: normal;
+    text-transform: none;
+}
+div#terms-conditions{
+    display:none;
+    height:10em;
+    overflow-y: scroll;
+    border:2px solid #1a1a1a;
+    padding:1em;
+}
+div#terms-conditions > div p, div#terms-conditions > div li{
+    text-align: left;
+    color:#1a1a1a;
+    font-size:0.75em;
+    text-transform: none;
+    margin:0 1em;
+    padding;0;
+    font-weight: normal;
+}
+
 /* MOBILE MENU & HAMBURGER */
 .mobile-menu {
   position: absolute;
@@ -615,4 +739,22 @@ input {
     height: 200px; }
 
   .about-landing-hero {
-    background-position: top; } }
+    background-position: top; } 
+
+/* Sweepstakes / Promotion */
+    h2.promotion{
+        font-size:1.5em;
+    }
+    #contest p{
+        font-size:0.75em;
+    }
+    .hero-promo .hero-title h1{
+        font-size:0.75em;
+    }
+    .hero-promo .hero-title h4{
+        font-size:0.5em;
+    }
+    #contest > div {
+        padding:1em;
+    }
+}
