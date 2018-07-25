@@ -1,51 +1,60 @@
 <?php
-$subjectPrefix = 'SA Login Page Form';
-$emailTo       = 'Rod.Elliott@lehighoutfitters.com';
-$errors = array(); // array to hold validation errors
-$data   = array(); // array to pass back data
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name    = stripslashes(trim($_POST['name']));
-    $email   = stripslashes(trim($_POST['email']));
-    $phone = stripslashes(trim($_POST['phone']));
-    $message = stripslashes(trim($_POST['message']));
-    if (empty($name)) {
-        $errors['name'] = 'Name is required.';
+if(isset($_POST['email'])) {
+
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "Rod.Elliott@lehighoutfitters.com";
+    $email_subject = "SA Login Page Form Inquiry";
+
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
     }
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'Email is invalid.';
+    // validation expected data exists
+    if(!isset($_POST['name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['phone']) ||
+        !isset($_POST['message'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
-    if (empty($phone)) {
-        $errors['phone'] = 'Phone is required.';
+    $name = $_POST['name']; // required
+    $email = $_POST['email']; // required
+    $phone = $_POST['phone']; // not required
+    $message = $_POST['message']; // required
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+  if(!preg_match($email_exp,$email)) {
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+  }
+
+    $string_exp = "/^[A-Za-z .'-]+$/";
+
+  if(!preg_match($string_exp,$name)) {
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  }
+  if(strlen($message) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+    $email_message = "Form details below.\n\n";
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
     }
-    if (empty($message)) {
-        $errors['message'] = 'Message is required.';
-    }
-    // if there are any errors in our errors array, return a success boolean or false
-    if (!empty($errors)) {
-        $data['success'] = false;
-        $data['errors']  = $errors;
-    } else {
-        $subject = "$subjectPrefix $subject";
-        $body    = '
-            <strong>Name: </strong>'.$name.'<br />
-            <strong>Email: </strong>'.$email.'<br />
-            <strong>Phone: </strong>'.$phone.'<br />
-            <strong>Message: </strong>'.nl2br($message).'<br />
-        ';
-        $headers  = "MIME-Version: 1.1" . PHP_EOL;
-        $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
-        $headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
-        $headers .= "Date: " . date('r', $_SERVER['REQUEST_TIME']) . PHP_EOL;
-        $headers .= "Message-ID: <" . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>' . PHP_EOL;
-        $headers .= "From: " . "=?UTF-8?B?".base64_encode($name)."?=" . "<$email>" . PHP_EOL;
-        $headers .= "Return-Path: $emailTo" . PHP_EOL;
-        $headers .= "Reply-To: $email" . PHP_EOL;
-        $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
-        $headers .= "X-Originating-IP: " . $_SERVER['SERVER_ADDR'] . PHP_EOL;
-        mail($emailTo, "=?utf-8?B?" . base64_encode($subject) . "?=", $body, $headers);
-        $data['success'] = true;
-        $data['message'] = 'Congratulations. Your message has been sent successfully';
-    }
-    // return all our data to an AJAX call
-    echo json_encode($data);
-}
+    $email_message .= "Name: ".clean_string($name)."\n";
+    $email_message .= "Email: ".clean_string($email)."\n";
+    $email_message .= "Phone: ".clean_string($phone)."\n";
+    $email_message .= "Message: ".clean_string($message)."\n";
+
+// create email headers
+$headers = 'From: '.$email."\r\n".
+'Reply-To: '.$email."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);
+?>
