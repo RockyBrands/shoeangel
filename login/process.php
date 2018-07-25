@@ -1,7 +1,6 @@
 <?php
-// Configure your Subject Prefix and Recipient here
-$subjectPrefix = '[Contact Form Website]';
-$emailTo       = '<Rod.Elliott@lehighoutfitters.com>';
+$subjectPrefix = 'SA Login Page Form';
+$emailTo       = 'Rod.Elliott@lehighoutfitters.com';
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
