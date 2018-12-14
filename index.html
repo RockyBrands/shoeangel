@@ -1,925 +1,569 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=8device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Shoe Angel Footwear Programs</title>
-  <meta name="description" content="Shoe Angel provides hospitality footwear programs to organizations looking for a managed safety footwear program.">
-  <meta property="fb:app_id" content="1234567890" />
-  <meta property="og:title" content="Shoe Angel Footwear Programs" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="Shoe Angel provides hospitality footwear programs to organizations looking for a managed safety footwear program." />
-  <meta property="og:url" content="http://shoeangel.com" />
-  <meta property="og:image" content="http://shoeangel.com/images/img-fix/charity.jpg" />
-  <meta property="og:image:width" content="400" />
-  <meta property="og:image:height" content="300" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto|Material+Icons|Noto+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="icon" type="image/png" href="../images/img/favicon2.png" />
-  <link rel="stylesheet" type="text/css" href="/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112659555-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-112659555-1');
-</script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P9GWHM2');</script>
-<!-- End Google Tag Manager -->
-<style>
-    body .hs-button.primary,
-body input[type="submit"],
-body input[type="button"] {
-    background-color:#0050b2;
-    border:1px solid #0050b2;
-    border-radius:4px;
-    color:#ffffff;
-    display:inline-block;
-    font-family:sans-serif;
-    font-size:13px;
-    font-weight:bold;
-    line-height:40px;
-    text-align:center;
-    text-decoration:none;
-    width:200px;
-    -webkit-text-size-adjust:none;mso-hide:all;
-    }
-    .hs-form input[type="radio"] {
-        color: #000000;
-
-    }
-.hs-form input[type="checkbox"] {
-    color: #000000;
-    }
-    .hs-form textarea {
-        color: #000000;
-    }
-    .hs-form legal-consent-container{
-        color:#000000;
-    }
-    .hs-form richtext {
-        color: #000000!important;
-    }
-    .hs-form input[type="text"],
-.hs-form input[type="password"],
-.hs-form input[type="datetime"],
-.hs-form input[type="datetime-local"],
-.hs-form input[type="date"],
-.hs-form input[type="month"],
-.hs-form input[type="time"],
-.hs-form input[type="week"],
-.hs-form input[type="number"],
-.hs-form input[type="email"],
-.hs-form input[type="url"],
-.hs-form input[type="search"],
-.hs-form input[type="tel"],
-.hs-form input[type="color"],
-.hs-form input[type="file"],
-.hs-form textarea,
-.hs-form select {
-    background-color: #ffffff;
-    border-style: solid;
-    border-color: black;
-    max-width: 275px;
-    min-width: 200px;
-    height: 40px;
-    margin-bottom: 10px;
-    }
-
-.hs-form .hs-form-field{
-    color:#ffffff;
-    }
-
-/* Descriptions (targets class applied to Help Text divs) */
-.hs-form .hs-field-desc {
-    color:#000000;
-    padding: 5px;
-    }
-
-/* Labels (selects field labels and error messages) */
-.hs-form label {
-    color:#000000;
-    }
-.hs-form .hs-form-field > label {
-    color:#000000;
-    }
-.modal {
-  display: none;
-}
-.vanilla-modal .modal {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-  position: fixed;
-  content: "";
-  top: 10%;
-  left: 5%;
-  right: 5%;
-  bottom: 10%;
-  background: rgba(0, 0, 0, 0);
-  z-index: -1;
-  opacity: 1;
-  transition: opacity 0.2s, z-index 0s 0.2s;
-  text-align: center;
-  overflow: hidden;
-  overflow-y: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.vanilla-modal .modal > * {
-  display: inline-block;
-  white-space: normal;
-  vertical-align: middle;
-  text-align: left;
-}
-
-.vanilla-modal .modal:before {
-  display: inline-block;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  vertical-align: middle;
-  content: "";
-}
-
-.vanilla-modal.modal-visible .modal {
-  z-index: 99;
-  opacity: 1;
-  transition: opacity 0.2s;
-}
-
-.modal-inner {
-  position: relative;
-  overflow: hidden;
-  max-width: 500%;
-  max-height: 80%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #ffffff;
-  z-index: -1;
-  opacity: 1;
-  transform: scale(0);
-  transition: opacity 0.2s, transform 0.2s, z-index 0s 0.2s;
-  padding:30px;
-  margin:25px;
-}
-.modal-visible .modal-inner {
-  z-index: 100;
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-[data-modal-close] {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  font-size: 13px;
-  cursor: pointer;
-  text-align: center;
-  background: #ffffff;
-    color: #000000;
-  box-shadow: -1px 1px 2px rgba(0,0,0,0.2);
-}
-    p{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Shoe Angel</title>
+	<link href="css/lity.css" rel="stylesheet">
+	<script src="vendors/jquery.js"></script>
+	<script src="js/lity.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/hubspot.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:300,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9GWHM2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <nav>
-    <div class="logo">
-			<a href="http://shoeangel.com/">
-				<img alt="Shoe Angel Logo" src="/images/img/shoeangel-logo-white.png">
-			</a>
+	<header class="header_area">
+		<div class="top_menu row m0">
+			<div class="container">
+				<div class="float-left">
+					<ul class="left_side">
+						<li>
+							<a href="https://www.facebook.com/shoeangelshop/" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/shoeangelshop" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/shoe-angel/" target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="float-right">
+					<ul class="right_side">
+						<li>
+							<a href="tel:7407539100,2112">
+								<i class="lnr lnr-phone-handset"></i>
+								740.753.9100 Ext. 2112
+							</a>
+						</li>
+						<li>
+							<a href="mailto:shoeangel@rockybrands.com">
+								<i class="lnr lnr-envelope"></i>
+								shoeangel@rockybrands.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-    <div class="menu">
-        <ul class="navigation">
-            <li class="first  ">
-              <a class="" href="/about/">About</a>
-            </li>
-            <li class="  ">
-              <a class="" href="/brands/">Brands</a>
-            </li>
-            <li class="  ">
-              <a class="" href="/donations/">Donations</a>
-            </li>
-            <li class="  ">
-              <a class="" href="/goodwords/">Good Words</a>
-            </li>
-            <li class="  ">
-              <a class="" href="/goodnews/">Good News</a>
-            </li>
-            <li class="  ">
-              <a class="" href="/faq/">FAQs</a>
-            </li>
-            <li class="  ">
-              <a class="" href="/contact/">Contact</a>
-            </li>
-            <li class="  last">
-              <a class="" href="https://www.customfit.me/cfshoeangelcmdlogin.aspx">Login</a>
-            </li>
-        </ul>
-    </div>
-    <div class="hamburger-menu">
-      <div class="bar"></div>
-    </div>
-</nav>
-<div class="mobile-menu">
-    <ul class="navigation">
-        <li class="first  ">
-          <a class="" href="/about/">About</a>
-        </li>
-        <li class="  ">
-          <a class="" href="/brands/">Brands</a>
-        </li>
-        <li class="  ">
-          <a class="" href="/donations/">Donations</a>
-        </li>
-        <li class="  ">
-          <a class="" href="/goodwords/">Good Words</a>
-        </li>
-        <li class="  ">
-          <a class="" href="/goodnews/">Good News</a>
-        </li>
-        <li class="  ">
-          <a class="" href="/faq/">FAQs</a>
-        </li>
-        <li class="  ">
-          <a class="" href="/contact/">Contact</a>
-        </li>
-        <li class="  last">
-          <a class="" href="https://www.customfit.me/cfshoeangelcmdlogin.aspx">Login</a>
-        </li>
-    </ul>
-</div>
-  <!--HERO-->
-  <div class="bg">
-    <div class="hero">
-      <div class="hero-title">
-        <h1>
-          <img src="images/img/shoeangel-logo-white.png" class="img-responsive" alt="Shoe Angel logo">
-          <div class="subtitle">Footwear Programs Benefiting Medical<br>Professionals and the Communities They Serve</div>
-        </h1>
-      </div>
-    </div>
-  </div>
-  <!--CLOSE HERO-->
-<div class="boxbox buckets">
-  <div class="row align-items-center">
-    <div class="col-lg">
-      <a href="about" class="btn">About Us</a>
-      <p>Shoe Angel is a superior way for you to supply and buy work footwear.<span style="color: #0050b2;font-weight:bold;"> DO GOOD.</span></p>
-    </div>
-    <div class="col-lg">
-      <a href="brands" class="btn" onclick="ga('send', 'event', 'link', 'click', 'brandsLink1')">Brands</a>
-      <p>Browse our large selection of industry-qualified brands. The right shoes <span style="color: #0050b2;font-weight:bold;">FEEL GOOD.</span></p>
-    </div>
-    <div class="col-lg">
-      <a href="donations" class="btn">Donations</a>
-      <p>A portion of every purchase is given to the charity of your choice.<span style="color: #0050b2;font-weight:bold;"> FEEL GOOD.</span></p>
-    </div>
-  </div>
-</div>
-<div class="boxbox main-box">
-    <div class="row align-items-center full-box">
-      <div class="col-lg">
-        <center>
-        <p>"The Shoe Angel team is very professional and did a great job throughout the process of setting up our Shoe Angel site."</p>
-        <p>Renee Cash, Director of Human Resources</p>
-        <a href="goodwords" class="btn" style="margin-bottom:15px;">Read More</a>
-        </center>
-      </div>
-      <div class="col-lg">
-          <center>
-              <img class="img-fluid d-none d-lg-block img-responsive" src="images/img/beckett-springs.png" alt="">
-              <img class="img-fluid d-lg-none img-responsive" src="images/img/beckett-springs.png" alt="">
-            </center>
-      </div>
-    </div>
-  </div>
-<div class="boxbox main-box">
-  <div class="row align-items-center full-box">
-    <div class="col-lg text-left">
-      <img class="img-fluid d-none d-lg-block" src="images/img-fix/benefits.jpg" alt="">
-      <img class="img-fluid d-lg-none" src="images/img-fix/benefits-lg.jpg" alt="">
-    </div>
-    <div class="col-lg">
-      <p>Medical professionals have a calling and a heart to care for and help others - they are true angels that <span style="color:#0050b2;font-weight:bold">DO GOOD</span> to make others <span style="color:#0050b2;font-weight:bold">FEEL GOOD.</span> </br><br>The Shoe Angel footwear program honors and mirrors that dedication through its many associate benefits.</p>
-      <a href="about" class="btn" style="margin-bottom:15px;">Find out more</a>
-    </div>
-  </div>
-</div>
-<div class="boxbox main-box">
-  <div class="row align-items-center full-box">
-    <div class="col-lg order-2 order-lg-1">
-      <p>In the same way that there is more than one way to help someone or make them <span style="color:#0050b2;font-weight:bold">FEEL GOOD</span>, there is more than one brand or style that your employees will need and want to make them <span style="color:#0050b2;font-weight:bold">DO GOOD</span> in their daily tasks and still <span style="color:#0050b2;font-weight:bold">FEEL GOOD</span> at the end of the day. That’s why we offer a large selection of brands and styles.</p>
-        <a href="brands" class="btn" style="margin-bottom:15px;" onclick="ga('send', 'event', 'link', 'click', 'brandsLink2')">See All Brands</a>
-    </div>
-    <div class="col-lg text-right order-1 order-lg-2">
-      <img class="img-fluid d-none d-lg-block" src="images/img-fix/brands.jpg" alt="">
-      <img class="img-fluid d-lg-none" src="images/img-fix/brands-lg.jpg" alt="">
-    </div>
-  </div>
-</div>
-<div class="boxbox main-box">
-  <div class="row align-items-center full-box">
-    <div class="col-lg text-left">
-      <img class="img-fluid d-none d-lg-block" src="images/img-fix/charity.jpg" alt="">
-      <img class="img-fluid d-lg-none" src="images/img-fix/charity-lg.jpg" alt="">
-    </div>
-    <div class="col-lg">
-      <p>A portion of every Shoe Angel purchase makes a difference. On behalf of your employees, Shoe Angel will donate to up to 4 designated-by-you charities which can include: your hospital foundation, a local charity, and 2 preset national charities including the Ronald McDonald House Charities. Giving back always <span style="color:#0050b2;font-weight:bold">FEELS GOOD.</span></p>
-      <a href="donations" class="btn" style="margin-bottom:15px;">Do Good</a>
-    </div>
-  </div>
-</div>
-  <!--FOOTER-->
-<footer>
-  <div class="footer">
-    <div class="row">
-      <div class="col-md">
-        <h2>Shoe Angel</h2>
-        <ul class="footer-menu">
-        <li><a href="http://shoeangel.com/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/brands/" onclick="ga('send', 'event', 'link', 'click', 'footerBrands')">Brands</a></li>
-        <li><a href="/donations/">Donations</a></li>
-        <li><a href="/goodwords/">Good Words</a></li>
-        <li><a href="/goodnews/">Good News</a></li>
-        <li><a href="/faq/">FAQs</a></li>
-        <li><a href="/contact/">Contact</a></li>
-	<li><a href="http://www.rockybrands.com/careers/">Careers</a></li>
-        <li><a href="https://www.customfit.me/cfshoeangelcmdlogin.aspx ">Login</a></li>
-        </ul>
-      </div>
-      <div class="col-md">
-        <h2>Contact Us</h2>
-        <ul class="footer-menu">
-        <li>Ashley Campbell, Shoe Goddess</li>
-        <li><i class="fas fa-phone" style="padding-right: 5px;"></i><a href="tel:7407539100,2112">740.753.9100 Ext. 2112</a></li>
-        <li><i class="fas fa-envelope" style="padding-right: 5px;"></i><a href="mailto:ashley.campbell@lehighoutfitters.com?subject=Shoe Angel website inquiry"> Ashley.Campbell@LehighOutfitters.com</a></li>
-        <br>
-        <li> 39 E Canal St</li>
-        <li>Nelsonville, Ohio 45764</li>
-        </ul>
-      </div>
-      <div class="col-md">
-        <h2>Program Inquiry</h2>
-          <div class="modal-links">
-          <a href="#modal-1" data-modal-open><button style="background-color:#0052ac;background-image:url();border:1px solid #0052ac;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;cursor:pointer;">Find Out More</button></a>
-          </div>
-              <div id="modal-1" style="position:absolute;display:none;padding:20px!important;margin-left:20px!important;margin-right:20px!important;margin-top:10px;margin-bottom:10px;max-width:50% !important;">
-        <h2 style="color:#000000;">Find Out More<br /></h2>
-<!--[if lte IE 8]>
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="img/logo_new.png" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row ml-0 w-100">
+							<div class="col-lg-12 pr-0">
+								<ul class="nav navbar-nav center_nav pull-right" style="justify-content:flex-end!important;">
+										<li class="nav-item ">
+												<a class="nav-link" href="index.html">Home</a>
+											</li>
+									<li class="nav-item ">
+										<a class="nav-link" href="#about">About</a>
+									</li>
+									<li class="nav-item ">
+										<a class="nav-link" href="brands.html">Brands</a>
+									</li>
+									<li class="nav-item ">
+										<a class="nav-link" href="#donations">Donations</a>
+									</li>
+									<!--<li class="nav-item ">
+										<a class="nav-link" href="#testimonials">Good Words</a>
+									</li>-->
+									<li class="nav-item ">
+										<a class="nav-link" href="#faq">FAQ</a>
+									</li>
+									<!--<li class="nav-item ">
+											<a class="nav-link" href="blog.html">Blog</a>
+										</li>-->
+									<li class="nav-item ">
+										<a class="nav-link" href="#contact">Contact</a>
+									</li>
+									<li class="nav-item ">
+										<a class="nav-link" href="login.html">Login</a>
+									</li>
+									<!--<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TEST</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="#">Test</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Test</a>
+											</li>
+										</ul>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+	<!--================ Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content row">
+					<div class="col-lg-12">
+						<center>
+						<h1 style="font-family: 'Heebo', sans-serif;font-weight:900;">Welcome To Shoe Angel</h1>
+						<p style="font-family: 'Heebo', sans-serif;font-weight:300;padding-bottom:30px;padding-top:10px;">Free Footwear Programs Benefiting Medical Professionals & The Communities They Serve</p>
+							<a href="https://cdn2.hubspot.net/hubfs/4392020/Shoe%20Angel.mp4" data-lity><i style="color:#ffffff;padding-bottom:30px;" class="fa fa-play-circle fa-5x"></i></a>
+						<br>
+						<a style="font-family: 'Heebo', sans-serif;font-weight:900;text-transform: uppercase" class="main_btn mr-10" href="#about">explore benefits</a></center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+	<!--================ Start Feedback Area =================-->
+	<section class="feedback_area section_gap relative" style="padding-top:50px!important;padding-bottom:50px!important;background:#e6e6e6;">
+			<div class="container">
+				<div class="row justify-content-center section-title-wrap" style="margin-bottom:0px;">
+					<div class="col-lg-12">
+						<h4 style="color:#0057bb;font-family: 'Montserrat', sans-serif;font-weight:700;padding-bottom:20px;">SOME OF OUR CLIENTS</h4>
+					</div>
+					<div class="col-lg-12">
+							<img style="padding:20px;" src="img/magruder.png"><img style="padding:20px;" src="img/Genesis.png"><img style="padding:20px;" src="img/cincinnati.png"><img  style="padding:20px;" src="img/mercy.png"><img style="padding:20px;" src="img/dmc.png"><img style="padding:20px;" src="img/beaumont.png">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================ End Feedback Area =================-->
+<!--================ Start Offered Services Area =================-->
+<section class="service_area section_gap" style="padding-top:50px!important;background:url(img/sa-about-bg.png) bottom right no-repeat;" id="about">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap" style="margin-bottom:20px !important;">
+				<div class="col-lg-12">
+					<h5 style="color:#0057bb;font-family: 'Montserrat', sans-serif;font-weight:700;">ABOUT US</h5>
+					<h1>What is Shoe Angel?</h1>
+					<hr style="width:50%;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="single_service" style="text-align: left;">
+						<!--<span class="lnr lnr-rocket" style="float:left;"></span>-->
+						<i class="fa fa-bullhorn fa-2x" style="float:left;color:#0057bb;"></i>
+						<a href="#">
+							<h3>&nbsp;&nbsp;Who We Are</h3>
+						</a>
+						<p>
+								Shoe Angel is a superior way for the healthcare industry to supply and buy work footwear.
+								Facility utilization of this <b style="color:#0050b2;">free footwear benefit program</b> is <b style="color:#0050b2;">good</b> for your employees and your chosen charity. It helps you establish the value of proper footwear on the job and of each employee's safety, well-being, and value of giving back. We are a provider aligned with your desire and intent to keep your employees healthy and happy.<br /><br />
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="single_service" style="text-align: left;">
+							<i class="fa fa-globe fa-2x" style="float:left;color:#0057bb;"></i>
+						<a href="#">
+							<h3>&nbsp;&nbsp;Brands</h3>
+						</a>
+						<p>
+								Shoe Angel provides brands from all over that you know and love. Our selection ranges from Dansko to Skechers Work, Nurse Mates, Reebok, Sanita and more. We've got hundreds of styles to choose from so your employees are sure to find the perfect fit to keep them safe in all-day comfort. The right shoes <b style="color:#0050b2;">feel good</b>.<br />
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="single_service" style="text-align: left;">
+							<i class="fa fa-truck fa-2x" style="float:left;color:#0057bb;"></i>
+						<a href="#">
+							<h3>&nbsp;&nbsp;Free Shipping & Returns</h3>
+						</a>
+						<p>
+								Shipping and Returns are always free. No promotional time periods or gimmicks. No worries on shoes not fitting right, simply send them back free. We <b style="color:#0050b2;">feel good</b> about that.<br /><br />
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="single_service" style="text-align: left;">
+							<i class="fa fa-dollar-sign fa-2x" style="float:left;color:#0057bb;"></i>
+						<a href="#">
+							<h3>&nbsp;&nbsp;Prices</h3>
+						</a>
+						<p>
+								Our efficient online platform saves you and your employees up to 25% off traditional retail prices. Saving money is a definite <b style="color:#0050b2;">feel good</b>.<br /><br />
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+						<div class="single_service" style="text-align: left;">
+								<i class="fa fa-clock fa-2x" style="float:left;color:#0057bb;"></i>
+							<a href="#">
+								<h3>&nbsp;&nbsp;Convenience</h3>
+							</a>
+							<p>
+									24/7/365 availability. Through a customized dedicated website built just for you, your employees can shop anytime, anywhere, at their convenience. Personalization and saving time is a definite <b style="color: #0050b2;">feel good</b>.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+							<div class="single_service" style="text-align: left;">
+									<i class="fa fa-shield-alt fa-2x" style="float:left;color:#0057bb;"></i>
+								<a href="#">
+									<h3>&nbsp;&nbsp;Warranty</h3>
+								</a>
+								<p>
+										All Products are warranted for 1 full year against manufacturer defects. We <b style="color: #0050b2;">feel good</b> about that too.
+								</p>
+							</div>
+						</div>
+			</div>
+			<div class="row" style="padding-top:45px !important;padding-bottom:10px !important;">
+				<div class="col-lg-12">
+					<center>
+						<a style="font-family: 'Heebo', sans-serif;font-weight:900;text-transform: uppercase" class="blue_btn mr-10" href="#contact">contact us</a>
+					</center>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--================ End Offered Services Area =================-->
+<!--================ Start Donation Area =================-->
+<section class="service_area section_gap" style="padding-top:50px!important;padding-bottom:75px!important;background-color:#f2a900;" id="donations">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap" style="margin-bottom:20px;">
+				<div class="col-lg-12">
+					<h5 style="color:#000000;font-family: 'Montserrat', sans-serif;font-weight:700;">CHARITABLE DONATIONS</h5>
+					<h1 style="color:#ffffff;font-family: 'Montserrat', sans-serif;font-weight:700;font-size:3em;">Do Good.<br>Feel Good.</h1>
+					<!--<hr style="width:50%;">-->
+				</div>
+			</div>
+			<div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-xs-12">
+			<p style="color:#000000;text-align: center;font-size:16px;font-family: 'Lora', serif;font-weight:300;font-size:1.25em;">
+					5% of every Shoe Angel purchase is given to up to 4 charities of your designation. Charities can include: your hospital foundation, a local charity, and our preset national charity, Ronald McDonald House Charities. Charity options can be customized per location, department, floor and even per associate.<br /><br />
+			</p></div>
+			<!--<div class="row">
+				<div class="offset-lg-3 col-lg-6 offset-md-3 col-md-6 col-xs-12">
+					<div class="single_service">
+						<a href="#">
+							<h1 style="color:#ffffff;font-family: 'Montserrat', sans-serif;font-weight:700;font-size:2.5em;">5% Charity</h1>
+						</a>
+						<p style="color:#000000;line-height:1;font-family: 'Montserrat', sans-serif;font-weight:700">
+							Raised<br /><span style="font-size:0.75rem;">TOWARD LOCAL<br />CHARITIES & FOUNDATIONS</span><br />
+						</p>
+					</div>
+				</div>
+			</div>-->
+		</div>
+	</section>
+	<!--================ End Donation Area =================-->
+<!--================ Testimonial Area =================-->
+<!--<section class="about_myself pad_bottom" style="padding-bottom:0px !important;background-color:#f9f9ff !important;">
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-6 pl-0" style="padding-bottom:25px !important;">
+							<div class="about_box" style="text-align:center!important;>
+								<div class="section-title-wrap text-left">
+										<h5 style="color:#0057bb;font-family: 'Montserrat', sans-serif;font-weight:700;padding-top:25px !important;">OUR PARTNERS</h5>
+									<h1>Success Stories</h1>
+								</div>
+								<div class="activity">
+									<div class="row">
+											<div class="col-lg-6 col-md-6">
+													<a href="#testimonialImage" onclick="changeImage('img/testimonialsAdams.jpg')"><img class="imgActive" style="max-width:250px!important;background: #ffffff;padding: 10px;margin-bottom: 20px;border: 1px solid #dddddd" src="img/adamsCounty.png" onmouseover="this.src='img/adamsHover.png';" onmouseout="this.src='img/adamsCounty.png';"></a>
+												</div>
+										<div class="col-lg-6 col-md-6">
+												<a href="#testimonialImage" onclick="changeImage('img/placehold.jpg')"><img style="max-width:250px!important;background: #ffffff;padding: 10px;margin-bottom: 20px;border: 1px solid #dddddd" src="img/loganBlock.png" onmouseover="this.src='img/loganHover.png';" onmouseout="this.src='img/loganBlock.png';"></a>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<a href="#testimonialImage" onclick="changeImage('img/placehold.jpg')"><img style="max-width:250px!important;background: #ffffff;padding: 10px;margin-bottom: 20px;border: 1px solid #dddddd" src="img/beckett.png" onmouseover="this.src='img/beckettHover.png';" onmouseout="this.src='img/beckett.png';"></a>
+										</div>
+										<div class="col-lg-6 col-md-6">
+												<a href="#testimonialImage" onclick="changeImage('img/testimonialsAdams.jpg')"><img style="max-width:250px!important;background: #ffffff;padding: 10px;margin-bottom: 20px;border: 1px solid #dddddd" src="img/adamsCounty.png" onmouseover="this.src='img/adamsHover.png';" onmouseout="this.src='img/adamsCounty.png';"></a>
+											</div>
+									<div class="col-lg-6 col-md-6">
+											<a href="#testimonialImage" onclick="changeImage('img/placehold.jpg')"><img style="max-width:250px!important;background: #ffffff;padding: 10px;margin-bottom: 20px;border: 1px solid #dddddd" src="img/loganBlock.png" onmouseover="this.src='img/loganHover.png';" onmouseout="this.src='img/loganBlock.png';"></a>
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<a href="#testimonialImage" onclick="changeImage('img/placehold.jpg')"><img style="max-width:250px!important;background: #ffffff;padding: 10px;margin-bottom: 20px;border: 1px solid #dddddd" src="img/beckett.png" onmouseover="this.src='img/beckettHover.png';" onmouseout="this.src='img/beckett.png';"></a>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 pr-0">
+									<div class="about_img">
+										<img class="img-fluid w-100" id="testimonialImage" src="img/testimonialsAdams.jpg" alt="" style="padding-top:25px;">
+									</div>
+								</div>
+						</div>
+			</div>
+		</div>
+	</section>-->
+	<!--================ End About Myself Area =================-->
+<!--================ Start FAQ Area =================-->
+<section class="service_area section_gap" style="padding-top:50px!important;padding-bottom:50px!important;background-color:#e6e6e6;" id="faq">
+	<div class="container">
+		<div class="row justify-content-center section-title-wrap" style="margin-bottom:20px;">
+			<div class="col-lg-12">
+				<h1>FAQs</h1>
+				<hr style="width:50%;">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="single_service" style="text-align: left;">
+					<!--<span class="lnr lnr-rocket" style="float:left;"></span>-->
+					<center><i class="fa fa-hand-holding-heart fa-3x" style="color:#0057bb;"></i></center><br>
+					<a href="#">
+						<h3>Can I donate to any charity or foundation?</h3>
+					</a>
+					<p>
+						Yes. Your employees can choose to donate to Ronald McDonald House Charities or choose 3 additional charities which could include your hospital or local community foundation.<br /><br />
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="single_service" style="text-align: left;">
+						<center><i class="fa fa-hospital-alt fa-3x" style="color:#0057bb;"></i></center><br>
+					<a href="#">
+						<h3>How do I nominate my foundation to be eligible?</h3>
+					</a>
+					<p>
+						Simple – just let us know when you sign up for an account which foundation or 2 charities you choose. We’ll take care of the rest.<br />
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="single_service" style="text-align: left;">
+						<center><i class="fa fa-question fa-3x" style="color:#0057bb;"></i></center><br>
+					<a href="#">
+						<h3>How much of each purchase is donated?</h3>
+					</a>
+					<p>
+						Shoe Angel will donate 5% of every purchase to your employee’s chosen charity. The donation will be made to each charity by Shoe Angel on behalf of each individual employee.<br /><br />
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End FAQ Area =================-->
+	<!--================ Start Appointment Area =================-->
+	<section class="appointment-area" style="background:url(img/clinic.png) top left no-repeat;" id="contact">
+		<div class="container">
+			<div class="row justify-content-between align-items-center appointment-wrap" style="border-bottom:none !important;">
+				<div class="col-lg-5 col-md-6 appointment-left">
+					<h1>
+						Learn More
+					</h1>
+					<p style="max-width:900px!important;font-family: 'Lato', sans-serif;color:#000000!important;font-size:18px;">
+							Sign up for news, events, and promotions. We only use your information for our marketing material. We never sell or distribute your information to outside companies. You can unsubscribe at any time.
+					</p>
+				</div>
+				<div class="col-lg-6 col-md-6 pt-60 pb-60">
+					<div class="appointment-right">
+						<form class="form-wrap" style="padding: 50px 60px 50px !important;">
+							<!--[if lte IE 8]>
+							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+							<![endif]-->
+							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+							<script>
+								hbspt.forms.create({
+									portalId: "4392020",
+									formId: "9366c409-f862-4c99-8358-90f4252e07be"
+								});
+							</script>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Appointment Area =================-->
+	<!--================ Start recent-blog Area =================-->
+	<!--<section class="recent-blog-area section_gap" style="padding-top:50px !important;">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap" style="margin-bottom:25px !important;">
+				<div class="col-lg-12">
+					<h1 style="padding-top:25px!important;">Recent Posts</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="single-recent-blog col-lg-4 col-md-4" style="background-color:#f2f2f2;padding:10px !important;border: 5px solid #ffffff;">
+					<div class="thumb">
+						<img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
+					</div>
+					<a href="#">
+						<h4>Blog Title</h4>
+					</a>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud.
+					</p>
+					<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+						<div class="meta">
+							<span class="lnr lnr-calendar-full"></span> 13th Dec 2018
+						</div>
+					</div>
+				</div>
+				<div class="single-recent-blog col-lg-4 col-md-4" style="background-color:#f2f2f2;padding:10px !important;border: 5px solid #ffffff;">
+					<div class="thumb">
+						<img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
+					</div>
+					<a href="#">
+						<h4>Blog Title</h4>
+					</a>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud.
+					</p>
+					<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+						<div class="meta">
+							<span class="lnr lnr-calendar-full"></span> 13th Dec 2018
+						</div>
+					</div>
+				</div>
+				<div class="single-recent-blog col-lg-4 col-md-4" style="background-color:#f2f2f2;padding:10px !important;border: 5px solid #ffffff;">
+					<div class="thumb">
+						<img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
+					</div>
+					<a href="#">
+						<h4>Blog Title</h4>
+					</a>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud.
+					</p>
+					<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+						<div class="meta">
+							<span class="lnr lnr-calendar-full"></span> 13th Dec 2018
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!--================ end recent-blog Area =================-->
+	<!--================ start footer Area =================-->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-6">
+					<div class="single-footer-widget">
+						<h6><span style="font-weight: lighter !important;">Get </span><span style="font-weight:bolder!important;">In Touch</span></h6>
+						<ul class="footer-nav">
+							<li>
+								<a style="color:#f2a900!important;" href="tel:7407539100,2112">740.753.9100 Ext. 2112</a>
+							</li>
+							<li>
+								<a style="color:#f2a900!important;" href="mailto:ashley.campbell@lehighoutfitters.com">Contact A Rep</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6">
+					<div class="single-footer-widget mail-chimp">
+						<h6 class="mb-20">Location</h6>
+						<p style="color:#f2a900!important;">
+							39 E Canal St<br>
+							Nelsonville, Ohio 45764
+						</p>
+					</div>
+				</div>
+				<div class="offset-lg-1 col-lg-4  col-md-12">
+					<div class="newsletter">
+						<h6>Promotional Emails</h6>
+						<div id="mc_embed_signup" class="footerForm">
+								<!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 <script>
   hbspt.forms.create({
 	portalId: "4392020",
-	formId: "9366c409-f862-4c99-8358-90f4252e07be",
-  css: ""
+	formId: "aabb1cb0-2673-49db-8cd6-8e91ec139a7f",
+	submitButtonClass: 'footer_btn'
 });
 </script>
-    </div>
-
-    <div class="modal">
-      <div class="modal-inner">
-        <span data-modal-close>&times;</span>
-        <div class="modal-content"></div>
-      </div>
-    </div>
-        <h2>Social</h2>
-        <ul class="social-menu">
-          <li><a href="https://www.facebook.com/shoeangelshop/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-          <li><a href="https://twitter.com/shoeangelshop"><i class="fab fa-twitter fa-2x"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/shoe-angel/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-        </ul>
-              </div>
-        <!--
-        <div class="footer-promo">
-            <a href="http://shoeangel.com/contest"><img src="../images/img/nurses_week_contest.jpg" style="max-width:360px;height:auto;width:100%;"/></a>
-        </div>
-      -->
-      </div>
-    </div>
-  </div>
-  <p class="copyright">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Lehigh Outfitters. Shoe Angel is a branded service of Lehigh Outfitters, LLC, a Rocky Brands company. All rights reserved.</p>
-</footer>
-<script type="text/javascript">
-_linkedin_data_partner_id = "196441";
-</script><script type="text/javascript">
-(function(){var s = document.getElementsByTagName("script")[0];
-var b = document.createElement("script");
-b.type = "text/javascript";b.async = true;
-b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-s.parentNode.insertBefore(b, s);})();
-</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=196441&fmt=gif" />
-</noscript>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4392020.js"></script>
-<!-- End of HubSpot Embed Code -->
-<script type="text/javascript">
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-});
-
-$('.counter').each(function() {
-  var $this = $(this),
-      countTo = $this.attr('data-count');
-  $({ countNum: $this.text()}).animate({
-    countNum: countTo
-  },
-  {
-    duration: 2000,
-    easing:'linear',
-    step: function() {
-      $this.text(Math.floor(this.countNum));
-    },
-    complete: function() {
-      $this.text(this.countNum);
-      //alert('finished');
-    }
-  });
-});
-$(document).ready(function() {
-	$('.counter').addClass("prefix");
-});
-
-// Hamburger Menu //
-(function () {
-$('.hamburger-menu').on('click', function() {
-	$('.bar').toggleClass('animate');
-})
-})();
-
-$('.mobile-menu').hide();
-(function (){
-	$('.hamburger-menu').on('click', function(){
-		$('.mobile-menu').slideToggle(300);
-	})
-})();
-
-(function () {
-$('.mobile-menu ul li a').on('click', function() {
-	$('.mobile-menu').slideToggle(300);
-	$('.bar').toggleClass('animate');
-})
-})();
-</script>
-<!-- <script src="js/scripts.js"></script> -->
-<script>
-(function(h,e,a,t,m,p) {
-m=e.createElement(a);m.async=!0;m.src=t;
-p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
-})(window,document,'script','https://u.heatmap.it/log.js');
-</script>
-<!--STARTS THE EMAIL MODAL SCRIPTING-->
-<script>
-      (function (global, factory) {
-  if (typeof define === "function" && define.amd) {
-    define(['exports'], factory);
-  } else if (typeof exports !== "undefined") {
-    factory(exports);
-  } else {
-    var mod = {
-      exports: {}
-    };
-    factory(mod.exports);
-    global.VanillaModal = mod.exports;
-  }
-})(this, function (exports) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  var _createClass = function () {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
-      }
-    }
-
-    return function (Constructor, protoProps, staticProps) {
-      if (protoProps) defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  }();
-
-  var _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  var defaults = {
-    modal: '.modal',
-    modalInner: '.modal-inner',
-    modalContent: '.modal-content',
-    open: '[data-modal-open]',
-    close: '[data-modal-close]',
-    page: 'body',
-    class: 'modal-visible',
-    loadClass: 'vanilla-modal',
-    clickOutside: true,
-    closeKeys: [27],
-    transitions: true,
-    transitionEnd: null,
-    onBeforeOpen: null,
-    onBeforeClose: null,
-    onOpen: null,
-    onClose: null
-  };
-
-  function throwError(message) {
-    // eslint-disable-next-line no-console
-    console.error('VanillaModal: ' + message);
-  }
-
-  function find(arr, callback) {
-    return function (key) {
-      var filteredArray = arr.filter(callback);
-      return filteredArray[0] ? filteredArray[0][key] : undefined;
-    };
-  }
-
-  function transitionEndVendorSniff() {
-    var el = document.createElement('div');
-    var transitions = [{ key: 'transition', value: 'transitionend' }, { key: 'OTransition', value: 'otransitionend' }, { key: 'MozTransition', value: 'transitionend' }, { key: 'WebkitTransition', value: 'webkitTransitionEnd' }];
-    return find(transitions, function (_ref) {
-      var key = _ref.key;
-      return typeof el.style[key] !== 'undefined';
-    })('value');
-  }
-
-  function isPopulatedArray(arr) {
-    return Object.prototype.toString.call(arr) === '[object Array]' && arr.length;
-  }
-
-  function getNode(selector, parent) {
-    var targetNode = parent || document;
-    var node = targetNode.querySelector(selector);
-    if (!node) {
-      throwError(selector + ' not found in document.');
-    }
-    return node;
-  }
-
-  function addClass(el, className) {
-    if (!(el instanceof HTMLElement)) {
-      throwError('Not a valid HTML element.');
-    }
-    el.setAttribute('class', el.className.split(' ').filter(function (cn) {
-      return cn !== className;
-    }).concat(className).join(' '));
-  }
-
-  function removeClass(el, className) {
-    if (!(el instanceof HTMLElement)) {
-      throwError('Not a valid HTML element.');
-    }
-    el.setAttribute('class', el.className.split(' ').filter(function (cn) {
-      return cn !== className;
-    }).join(' '));
-  }
-
-  function getElementContext(e) {
-    if (e && typeof e.hash === 'string') {
-      return document.querySelector(e.hash);
-    } else if (typeof e === 'string') {
-      return document.querySelector(e);
-    }
-    throwError('No selector supplied to open()');
-    return null;
-  }
-
-  function applyUserSettings(settings) {
-    return _extends({}, defaults, settings, {
-      transitionEnd: transitionEndVendorSniff()
-    });
-  }
-
-  function matches(e, selector) {
-    var allMatches = (e.target.document || e.target.ownerDocument).querySelectorAll(selector);
-    for (var i = 0; i < allMatches.length; i += 1) {
-      var node = e.target;
-      while (node && node !== document.body) {
-        if (node === allMatches[i]) {
-          return node;
-        }
-        node = node.parentNode;
-      }
-    }
-    return null;
-  }
-
-  var VanillaModal = function () {
-    function VanillaModal(settings) {
-      _classCallCheck(this, VanillaModal);
-
-      this.isOpen = false;
-      this.current = null;
-      this.isListening = false;
-
-      this.settings = applyUserSettings(settings);
-      this.dom = this.getDomNodes();
-
-      this.open = this.open.bind(this);
-      this.close = this.close.bind(this);
-      this.closeKeyHandler = this.closeKeyHandler.bind(this);
-      this.outsideClickHandler = this.outsideClickHandler.bind(this);
-      this.delegateOpen = this.delegateOpen.bind(this);
-      this.delegateClose = this.delegateClose.bind(this);
-      this.listen = this.listen.bind(this);
-      this.destroy = this.destroy.bind(this);
-
-      this.addLoadedCssClass();
-      this.listen();
-    }
-
-    _createClass(VanillaModal, [{
-      key: 'getDomNodes',
-      value: function getDomNodes() {
-        var _settings = this.settings,
-            modal = _settings.modal,
-            page = _settings.page,
-            modalInner = _settings.modalInner,
-            modalContent = _settings.modalContent;
-
-        return {
-          modal: getNode(modal),
-          page: getNode(page),
-          modalInner: getNode(modalInner, getNode(modal)),
-          modalContent: getNode(modalContent, getNode(modal))
-        };
-      }
-    }, {
-      key: 'addLoadedCssClass',
-      value: function addLoadedCssClass() {
-        addClass(this.dom.page, this.settings.loadClass);
-      }
-    }, {
-      key: 'setOpenId',
-      value: function setOpenId(id) {
-        var page = this.dom.page;
-
-        page.setAttribute('data-current-modal', id || 'anonymous');
-      }
-    }, {
-      key: 'removeOpenId',
-      value: function removeOpenId() {
-        var page = this.dom.page;
-
-        page.removeAttribute('data-current-modal');
-      }
-    }, {
-      key: 'open',
-      value: function open(allMatches, e) {
-        var page = this.dom.page;
-        var _settings2 = this.settings,
-            onBeforeOpen = _settings2.onBeforeOpen,
-            onOpen = _settings2.onOpen;
-
-        this.releaseNode(this.current);
-        this.current = getElementContext(allMatches);
-        if (this.current instanceof HTMLElement === false) {
-          throwError('VanillaModal target must exist on page.');
-          return;
-        }
-        if (typeof onBeforeOpen === 'function') {
-          onBeforeOpen.call(this, e);
-        }
-        this.captureNode(this.current);
-        addClass(page, this.settings.class);
-        this.setOpenId(this.current.id);
-        this.isOpen = true;
-        if (typeof onOpen === 'function') {
-          onOpen.call(this, e);
-        }
-      }
-    }, {
-      key: 'detectTransition',
-      value: function detectTransition() {
-        var modal = this.dom.modal;
-
-        var css = window.getComputedStyle(modal, null);
-        return Boolean(['transitionDuration', 'oTransitionDuration', 'MozTransitionDuration', 'webkitTransitionDuration'].filter(function (i) {
-          return typeof css[i] === 'string' && parseFloat(css[i]) > 0;
-        }).length);
-      }
-    }, {
-      key: 'close',
-      value: function close(e) {
-        var _settings3 = this.settings,
-            transitions = _settings3.transitions,
-            transitionEnd = _settings3.transitionEnd,
-            onBeforeClose = _settings3.onBeforeClose;
-
-        var hasTransition = this.detectTransition();
-        if (this.isOpen) {
-          this.isOpen = false;
-          if (typeof onBeforeClose === 'function') {
-            onBeforeClose.call(this, e);
-          }
-          removeClass(this.dom.page, this.settings.class);
-          if (transitions && transitionEnd && hasTransition) {
-            this.closeModalWithTransition(e);
-          } else {
-            this.closeModal(e);
-          }
-        }
-      }
-    }, {
-      key: 'closeModal',
-      value: function closeModal(e) {
-        var onClose = this.settings.onClose;
-
-        this.removeOpenId(this.dom.page);
-        this.releaseNode(this.current);
-        this.isOpen = false;
-        this.current = null;
-        if (typeof onClose === 'function') {
-          onClose.call(this, e);
-        }
-      }
-    }, {
-      key: 'closeModalWithTransition',
-      value: function closeModalWithTransition(e) {
-        var _this = this;
-
-        var modal = this.dom.modal;
-        var transitionEnd = this.settings.transitionEnd;
-
-        var closeTransitionHandler = function closeTransitionHandler() {
-          modal.removeEventListener(transitionEnd, closeTransitionHandler);
-          _this.closeModal(e);
-        };
-        modal.addEventListener(transitionEnd, closeTransitionHandler);
-      }
-    }, {
-      key: 'captureNode',
-      value: function captureNode(node) {
-        var modalContent = this.dom.modalContent;
-
-        while (node.childNodes.length) {
-          modalContent.appendChild(node.childNodes[0]);
-        }
-      }
-    }, {
-      key: 'releaseNode',
-      value: function releaseNode(node) {
-        var modalContent = this.dom.modalContent;
-
-        while (modalContent.childNodes.length) {
-          node.appendChild(modalContent.childNodes[0]);
-        }
-      }
-    }, {
-      key: 'closeKeyHandler',
-      value: function closeKeyHandler(e) {
-        var closeKeys = this.settings.closeKeys;
-
-        if (isPopulatedArray(closeKeys) && closeKeys.indexOf(e.which) > -1 && this.isOpen === true) {
-          e.preventDefault();
-          this.close(e);
-        }
-      }
-    }, {
-      key: 'outsideClickHandler',
-      value: function outsideClickHandler(e) {
-        var clickOutside = this.settings.clickOutside;
-        var modalInner = this.dom.modalInner;
-
-        if (clickOutside) {
-          var node = e.target;
-          while (node && node !== document.body) {
-            if (node === modalInner) {
-              return;
-            }
-            node = node.parentNode;
-          }
-          this.close(e);
-        }
-      }
-    }, {
-      key: 'delegateOpen',
-      value: function delegateOpen(e) {
-        var open = this.settings.open;
-
-        var matchedNode = matches(e, open);
-        if (matchedNode) {
-          e.preventDefault();
-          this.open(matchedNode, e);
-        }
-      }
-    }, {
-      key: 'delegateClose',
-      value: function delegateClose(e) {
-        var close = this.settings.close;
-
-        if (matches(e, close)) {
-          e.preventDefault();
-          this.close(e);
-        }
-      }
-    }, {
-      key: 'listen',
-      value: function listen() {
-        var modal = this.dom.modal;
-
-        if (!this.isListening) {
-          modal.addEventListener('click', this.outsideClickHandler, false);
-          document.addEventListener('keydown', this.closeKeyHandler, false);
-          document.addEventListener('click', this.delegateOpen, false);
-          document.addEventListener('click', this.delegateClose, false);
-          this.isListening = true;
-        } else {
-          throwError('Event listeners already applied.');
-        }
-      }
-    }, {
-      key: 'destroy',
-      value: function destroy() {
-        var modal = this.dom.modal;
-
-        if (this.isListening) {
-          this.close();
-          modal.removeEventListener('click', this.outsideClickHandler);
-          document.removeEventListener('keydown', this.closeKeyHandler);
-          document.removeEventListener('click', this.delegateOpen);
-          document.removeEventListener('click', this.delegateClose);
-          this.isListening = false;
-        } else {
-          throwError('Event listeners already removed.');
-        }
-      }
-    }]);
-
-    return VanillaModal;
-  }();
-
-  exports.default = VanillaModal;
-});
-      </script>
-<!--SET UP NEW MODAL FOR EMAIL SIGN UPS WITH GDPR-->
-    <script>var modal = new VanillaModal.default();</script>
-  </body>
-  </html>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer-bottom d-flex justify-content-between">
+				<p class="col-lg-8 col-sm-12  m-0" style="background-color:#111111!important;padding-top:4px!important;">
+Copyright &copy;2018 Shoe Angel. All rights reserved.
+				</p>
+				<div class="col-lg-4 col-sm-12 footer-social" style="background-color:#111111!important;">
+					<a href="https://www.facebook.com/shoeangelshop/">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://twitter.com/shoeangelshop">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/shoe-angel/">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area =================-->
+	<!--================ Optional JavaScript =================-->
+	<!--================ jQuery first, then Popper.js, then Bootstrap JS =================-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		function changeImage(imgName){
+		   image = document.getElementById('testimonialImage');
+		   image.src = imgName;
+		}
+	  </script>
+	  <script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+				window.location.hash = hash;
+			  });
+			}
+		  });
+		});
+		</script>
+		<script>
+		$("img").on("click",
+            function(){
+                $(this).toggleClass("imgActive");
+            });
+		</script>
+</body>
+</html>
