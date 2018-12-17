@@ -565,5 +565,14 @@ Copyright &copy;2018 Shoe Angel. All rights reserved.
                 $(this).toggleClass("imgActive");
             });
 		</script>
+		<script>
+		function offsetAnchor() {
+			if(location.hash.length !== 0) {
+				window.scrollTo(window.scrollX, window.scrollY - 40);
+			}
+		}
+		window.addEventListener("hashchange", offsetAnchor);
+		window.setTimeout(offsetAnchor, 1);
+		</script>
 </body>
 </html>
