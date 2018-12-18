@@ -394,21 +394,6 @@ Copyright &copy;2018 Shoe Angel. All rights reserved.
 		   image.src = imgName;
 		}
 	  </script>
-	  <script>
-		$(document).ready(function(){
-		  $("a").on('click', function(event) {
-			if (this.hash !== "") {
-			  event.preventDefault();
-			  var hash = this.hash;
-			  $('html, body').animate({
-				scrollTop: $(hash).offset().top
-			  }, 800, function(){
-				window.location.hash = hash;
-			  });
-			}
-		  });
-		});
-		</script>
 		<script>
 		$("img").on("click",
             function(){
