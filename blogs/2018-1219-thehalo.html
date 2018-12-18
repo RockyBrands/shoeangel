@@ -1,23 +1,22 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Blog</title>
-	<link href="css/lity.css" rel="stylesheet">
-	<script src="vendors/jquery.js"></script>
-	<script src="js/lity.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="css/hubspot.css">
+	<link href="../css/lity.css" rel="stylesheet">
+	<script src="../vendors/jquery.js"></script>
+	<script src="../js/lity.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../vendors/linericon/style.css">
+	<link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="../vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../vendors/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="stylesheet" href="../css/hubspot.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Heebo:300,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -71,7 +70,7 @@
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<a class="navbar-brand logo_h" href="index.html">
-						<img src="img/logo_new.png" alt="">
+						<img src="../img/logo_new.png" alt="">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
@@ -139,7 +138,7 @@
                     <div class="single-post row">
                         <div class="col-lg-12">
                             <div class="feature-img">
-                                <img class="img-fluid" src="img/blog/blog-2018-1219.jpg" alt="">
+                                <img class="img-fluid" src="../img/blog/blog-2018-1219.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-3  col-md-3">
@@ -223,20 +222,16 @@
                     <div class="navigation-area">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/blog/prev.jpg" alt="">
+                                <div>
+                                    <a href="blog.html">
+                                        <img class="img-fluid" src="../img/blog/goHome.png" alt="">
                                     </a>
                                 </div>
-                                <div class="arrow">
-                                    <a href="#">
-                                        <span class="lnr text-white lnr-arrow-left"></span>
-                                    </a>
-                                </div>
-                                <div class="detials">
+                                
+                                <div class="detials" style="padding-left:10px;">
                                     <p>Prev Post</p>
-                                    <a href="#">
-                                        <h4>Space The Final Frontier</h4>
+                                    <a href="blog.html">
+                                        <h4>Blog Home</h4>
                                     </a>
                                 </div>
                             </div>
@@ -254,17 +249,36 @@
                                 </div>
                                 <div class="thumb">
                                     <a href="#">
-                                        <img class="img-fluid" src="img/blog/next.jpg" alt="">
+                                        <img class="img-fluid" src="../img/blog/next.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="comments-area">
-                        <h4>PUT DISQUS HERE</h4>
-                    </div>
-                    <div class="comment-form">
-                        <h4>REPLY AREA</h4>
+						<h4>Comments</h4>
+						<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://shoe-angel.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -386,12 +400,12 @@ Copyright &copy;2018 Shoe Angel. All rights reserved.
 	<!--================ End footer Area =================-->
 	<!--================ Optional JavaScript =================-->
 	<!--================ jQuery first, then Popper.js, then Bootstrap JS =================-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../vendors/nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="../js/custom.js"></script>
 	<script>
 		function changeImage(imgName){
 		   image = document.getElementById('testimonialImage');

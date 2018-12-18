@@ -1,9 +1,6 @@
 ; (function ($) {
     "use strict"
     var nav_offset_top = $('.header_area').height() + 50;
-    /*-------------------------------------------------------------------------------
-	  Navbar 
-    -------------------------------------------------------------------------------*/
 
     //* Navbar Fixed  
     function navbarFixed() {
@@ -47,20 +44,7 @@
             }
         });
     }
-    // $('.active-review-carusel').owlCarousel({
-    //     items:1,
-    //     loop:true,
-    //     // autoplay:true,
-    //     autoplayHoverPause: true,        
-    //     margin:0,
-    //     dots: true
-    // });
 
-    //------- Mailchimp js --------//  
-
-    /*----------------------------------------------------*/
-    /*  Google map js
-    /*----------------------------------------------------*/
     // Partner Map
     if (document.getElementById('mapBox')) {
         var map = new google.maps.Map(document.getElementById('mapBox'), {
