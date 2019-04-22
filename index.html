@@ -646,8 +646,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	formId: "aabb1cb0-2673-49db-8cd6-8e91ec139a7f",
 	submitButtonClass: 'footer_btn',
 	redirectUrl: 'https://manage.shoeangel.com/preferences',
-	onFormSubmitted: function() {
-		document.getElementById("hsForm_aabb1cb0-2673-49db-8cd6-8e91ec139a7f").target = "_blank";
+	onFormSubmit: function (form) {
+			attr('target', '_blank');
 	}
 });
 </script>
