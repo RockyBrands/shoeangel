@@ -391,18 +391,18 @@ a {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .home_banner_area {
-  background: url(../img/banner/sa-bg.jpg) no-repeat center bottom;
+  background: url(../img/banner/sa_hero.jpg) no-repeat center bottom;
   background-size: cover;
   position: relative;
   z-index: 1;
-  height: 900px; }
+  height: 600px; }
   @media (max-width: 992px) {
     .home_banner_area {
       height: 500px; } }
   .home_banner_area .banner_inner {
     position: relative;
     width: 100%;
-    min-height: 900px; }
+    min-height: 600px; }
     .home_banner_area .banner_inner .banner_content {
       color: #000000;
       padding-top: 110px;
@@ -412,7 +412,8 @@ a {
         font-size: 58px;
         max-width: 680px;
         color: #ffffff;
-        margin: 0; }
+        margin: 0;
+        text-shadow: 3px 3px #0057; }
       .home_banner_area .banner_inner .banner_content p {
         font-size: 24px;
         line-height: 24px;
@@ -421,7 +422,8 @@ a {
         color: #ffffff;
         padding: 30px 0px 40px;
         max-width: 650px;
-        margin: 0; }
+        margin: 0;
+        text-shadow: 2px 1px #0057;}
       .home_banner_area .banner_inner .banner_content .main_btn:hover {
         background: transparent;
         border: 1px solid #ffffff; }
