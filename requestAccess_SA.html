@@ -33,7 +33,7 @@
                     <img class="sa-logo" alt="Shoe Angel Logo" src="https://cdn2.hubspot.net/hubfs/4392020/Shoe%20Angel/sa_2x.png">
                     <div>
                         <p>
-                            Please answer the following questions to request<br>access to your Shoe Angel account.
+                            Please answer the following questions to request<br>a password for your Shoe Angel account.
                         </p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
     var questions = [
   {question:"What's your first name?"},
   {question:"What's your last name?"},
-  {question:"What's your email?", pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/}
+  {question:"What's your work email?", pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/}
 ]
 
 ;(function(){
@@ -96,7 +96,7 @@
     var h3 = document.createElement('h3');
     var a = document.createElement('a');
     h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'));
-    h3.appendChild(document.createTextNode('Check your email for further instructions.'));
+    h3.appendChild(document.createTextNode('Check your email for your Shoe Angel password.'));
 
     // Create proper attributes for a Go Back link
     var hashSymbol = document.createAttribute("href");
